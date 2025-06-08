@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shadow for 3D effect -->
+  <ellipse cx="100" cy="120" rx="80" ry="20" fill="#000000" opacity="0.3" filter="url(#blur)" />
+
+  <!-- Disk outer circle with metallic gradient -->
+  <defs>
+    <radialGradient id="diskGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#d9e6f2" />
+      <stop offset="70%" stop-color="#b0c4de" />
+      <stop offset="100%" stop-color="#4682b4" />
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#diskGradient)" stroke="#2f4f4f" stroke-width="2" />
+
+  <!-- Reflective shine for realism -->
+  <path d="M50 50 Q100 30 150 50 T100 70" fill="white" opacity="0.4" />
+
+  <!-- Central hole of the disk -->
+  <circle cx="100" cy="100" r="15" fill="#2f4f4f" stroke="#1c2526" stroke-width="1" />
+
+  <!-- Inner ring for detail -->
+  <circle cx="100" cy="100" r="25" fill="none" stroke="#4682b4" stroke-width="2" />
+
+  <!-- Text label on disk (optional) -->
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="16" fill="#1c2526" text-anchor="middle">Disk</text>
+</svg>
