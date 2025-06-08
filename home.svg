@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground shadow for depth -->
+  <rect x="50" y="170" width="100" height="10" rx="5" fill="#000000" opacity="0.2" filter="url(#blur)" />
+
+  <!-- Definitions for filters and gradients -->
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <linearGradient id="roofGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6347" />
+      <stop offset="100%" stop-color="#dc143c" />
+    </linearGradient>
+    <linearGradient id="wallGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f5dc" />
+      <stop offset="100%" stop-color="#dcdcdc" />
+    </linearGradient>
+  </defs>
+
+  <!-- House walls -->
+  <rect x="60" y="100" width="80" height="70" fill="url(#wallGradient)" stroke="#333333" stroke-width="2" />
+
+  <!-- Roof -->
+  <polygon points="50,100 100,50 150,100" fill="url(#roofGradient)" stroke="#333333" stroke-width="2" />
+
+  <!-- Chimney -->
+  <rect x="120" y="60" width="15" height="30" fill="#8b0000" stroke="#333333" stroke-width="1" />
+
+  <!-- Door -->
+  <rect x="80" y="130" width="20" height="40" fill="#4682b4" stroke="#333333" stroke-width="1" />
+  <circle cx="95" cy="150" r="3" fill="#ffd700" />
+
+  <!-- Window -->
+  <rect x="110" y="110" width="20" height="20" fill="#87ceeb" stroke="#333333" stroke-width="1" />
+  <line x1="120" y1="110" x2="120" y2="130" stroke="#333333" stroke-width="1" />
+  <line x1="110" y1="120" x2="130" y2="120" stroke="#333333" stroke-width="1" />
+
+  <!-- Optional text label -->
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Home</text>
+</svg>

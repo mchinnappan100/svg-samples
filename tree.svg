@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground shadow for depth -->
+  <ellipse cx="100" cy="180" rx="50" ry="10" fill="#000000" opacity="0.2" filter="url(#blur)" />
+
+  <!-- Definitions for filters and gradients -->
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <radialGradient id="foliageGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#32cd32" />
+      <stop offset="80%" stop-color="#228b22" />
+      <stop offset="100%" stop-color="#006400" />
+    </radialGradient>
+  </defs>
+
+  <!-- Tree trunk -->
+  <rect x="90" y="100" width="20" height="80" rx="5" fill="#8b4513" stroke="#5c4033" stroke-width="2" />
+
+  <!-- Foliage (three overlapping circles for a rounded canopy) -->
+  <circle cx="100" cy="80" r="50" fill="url(#foliageGradient)" stroke="#006400" stroke-width="1" />
+  <circle cx="70" cy="100" r="40" fill="url(#foliageGradient)" stroke="#006400" stroke-width="1" />
+  <circle cx="130" cy="100" r="40" fill="url(#foliageGradient)" stroke="#006400" stroke-width="1" />
+
+  <!-- Highlight for foliage shine -->
+  <path d="M80 60 Q100 50 120 60" fill="white" opacity="0.3" />
+
+  <!-- Optional text label -->
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Tree</text>
+</svg>
