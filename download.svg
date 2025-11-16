@@ -1,0 +1,7 @@
+   <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Downward arrow path (for download/export action) -->
+                    <path d="M12 2v14"></path>
+                    <path d="M18 10l-6 6-6-6"></path>
+                    <!-- Base container/folder -->
+                    <path d="M21 16v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3"></path>
+                </svg>
